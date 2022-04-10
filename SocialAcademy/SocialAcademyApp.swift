@@ -6,12 +6,17 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct SocialAcademyApp: App {
+    init() {
+        FirebaseApp.configure()
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AuthView()
         }
     }
 }
